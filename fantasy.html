@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Jędrzej Głowaczewski" />
+	<title>Książki - fantastyka</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/menu.css" />
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,300i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cairo&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/previous-site.js"></script>
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="title">O Książkach</h1>
+			<h2 class="title">fantastycznych</h2>
+		</div>
+	</header>
+
+	<nav>
+		<div class="container on-hover">
+            <div id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 40">
+                    <g>
+                        <animateTransform id="button-anim"
+                                          attributeType="xml"
+                                          attributeName="transform"
+                                          type="rotate"
+                                          from="180 40 20"
+                                          to="0 40 20"
+                                          dur="0.3s"
+                                          begin="click" />
+
+                        <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                              d="M 24,12 H 56"
+                              id="path-top"
+                              inkscape:connector-curvature="0" />
+                        <path inkscape:connector-curvature="0"
+                              id="path-mid"
+                              d="M 24,20 H 56"
+                              style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        <path inkscape:connector-curvature="0"
+                              id="path-bot"
+                              d="M 24,28 H 56"
+                              style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                    </g>
+                </svg>
+            </div>
+			<ul id="main-menu" class="main-menu">
+				<li class="dropdown">
+					<a href="index.html"> Wstęp </a>
+					<div class="dropdown-content">
+						<a onclick="ToggleMenu()" href="index.html#generally">Ogółem</a>
+						<a onclick="ToggleMenu()" href="index.html#in-poland">W Polsce</a>
+					</div>
+				</li>
+				<li><a href="sci-fi.html"> Sci-Fi </a></li>
+				<li><a class="selected" href="fantasy.html"> Fantasy </a></li>
+				<li><a href="contact.html"> Kontakt </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<div class="container" id="main-container">
+			<button id="high-contrast" onclick="toggleContrast()"><img src="img/high-contrast.svg" /></button>
+			<section>
+				<h2>Co warto przeczytać?</h2>
+
+				<div class="gallery">
+					<div class="img-container zoom">
+						<a target="_blank" href="img/Wiedzmin.jpg"><img src="img/Wiedzmin.jpg" /><h3>Wiedźmin</h3></a>
+					</div>
+					<div class="img-container zoom">
+						<a target="_blank" href="img/Miasto-sniacych-ksiazek.jpg"><img src="img/Miasto-sniacych-ksiazek.jpg" /><h3>Miasto Śniących Książek</h3></a>
+					</div>
+					<div class="img-container zoom">
+						<a target="_blank" href="img/Mroczna-wieza.jpg"><img src="img/Mroczna-wieza.jpg" /><h3>Mroczna Wieża</h3></a>
+					</div>
+					<div class="img-container zoom">
+						<a target="_blank" href="img/Kroniki-krolobojcy.jpg"><img src="img/Kroniki-krolobojcy.jpg" /><h3>Kroniki Królobójcy</h3></a>
+					</div>
+					<div class="img-container zoom">
+						<a target="_blank" href="img/Pan-lodowego-ogrodu.jpg"><img src="img/Pan-lodowego-ogrodu.jpg" /><h3>Pan Lodowego Ogrodu</h3></a>
+					</div>
+					<div class="img-container zoom">
+						<a target="_blank" href="img/Wladca-pierscieni.jpg"><img src="img/Wladca-pierscieni.jpg" /><h3>Władca Pierścieni</h3></a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="container">
+		<div id="contact-info">
+			Kontakt: <a href="mailto:email@poczta.pl">email@poczta.pl</a>
+		</div>
+		<div id="number-of-visits"></div>
+		<div id="copyright">Copyright &copy; 2018 Wszelkie prawa zastrzeżone.</div>
+	</footer>
+</body>
+</html>

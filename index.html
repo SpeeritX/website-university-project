@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Jędrzej Głowaczewski" />
+	<title>Książki - fantastyka</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/menu.css" />
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,300i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cairo&amp;subset=latin-ext" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Cairo" />-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/previous-site.js"></script>
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1 class="title">O Książkach</h1>
+			<h2 class="title">fantastycznych</h2>
+		</div>
+	</header>
+
+	<nav>
+		<div class="container on-hover">
+            <div id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 40">
+                    <g>
+                        <animateTransform id="button-anim"
+                                          attributeType="xml"
+                                          attributeName="transform"
+                                          type="rotate"
+                                          from="180 40 20"
+                                          to="0 40 20"
+                                          dur="0.3s"
+                                          begin="click" />
+
+                        <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                              d="M 24,12 H 56"
+                              id="path-top"
+                              inkscape:connector-curvature="0" />
+                        <path inkscape:connector-curvature="0"
+                              id="path-mid"
+                              d="M 24,20 H 56"
+                              style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        <path inkscape:connector-curvature="0"
+                              id="path-bot"
+                              d="M 24,28 H 56"
+                              style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                    </g>
+                </svg>
+            </div>
+			<ul id="main-menu" class="main-menu">
+				<li class="dropdown"><a class="selected" href="index.html"> Wstęp </a>
+					<div class="dropdown-content">
+						<a onclick="ToggleMenu()" href="index.html#generally">Ogółem</a>
+						<a onclick="ToggleMenu()" href="index.html#in-poland">W Polsce</a>
+					</div>
+				</li>
+				<li><a href="sci-fi.html"> Sci-Fi </a></li>
+				<li><a href="fantasy.html"> Fantasy </a></li>
+				<li><a href="contact.html"> Kontakt </a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<div class="container" id="main-container">
+			<button id="high-contrast" onclick="toggleContrast()"><img src="img/high-contrast.svg" /></button>
+			<section id="generally">
+				<h2>Fantastyka</h2>
+				<p>
+					Gatunek literacki, a także filmowy, komiksowy, gier a niekiedy i malarstwa. Polega ona na kreowaniu świata przedstawionego, który w całości, lub w części różni się od rzeczywistości, na przykład przez dodanie elementów nadnaturalnych, lub stworzonej przez autora technologii. Można ją też uznać za właściwość elementu fikcji literackiej, lub innej, sprawiająca, że choć czytelnik uznaje go za niezgodny z przyjętymi przez niego kryteriami empirycznej rzeczywistości i wedle jego najlepszej wiedzy nieposiadający odpowiednika w świecie pozaliterackim oraz nieobecny w tekstach, które uznaje za realistyczne, godzi się w ramach literackiej gry uznać go za prawdopodobny (choć nie wiarygodny) w obrębie konstruowanej fikcji i decyduje, że nie narusza on spójności narracji.
+				</p>
+				<br />
+				<p>Gatunek ten można podzielić na trzy główne nurty:</p>
+				<ul>
+					<li><p><a href="sci-fi.html"> fantastykę naukową </a> (ang. <i>science fiction</i> – inspirowana postępem nauki i technologii, najczęściej akcja toczy się w przyszłości),</p></li>
+					<li><p><a href="fantasy.html"> fantasy </a> (zwykle inspirowana mitologiami oraz folklorem, występują zjawiska nadprzyrodzone),</p></li>
+					<li><p>horror (cechą spajającą jest obecność istoty, zdarzenia lub jakiejkolwiek innej formy zagrożenia życia bohatera, innych postaci, lub nawet całej ludzkości, przy czym zagrożenie to, z punktu widzenia rzeczywistości, musi być nierealne).</p></li>
+				</ul>
+			</section>
+
+			<section id="in-poland">
+				<h2>W Polsce</h2>
+				<p>
+					Rozwój fantastyki w Polsce był stosunkowo nierównomierny. Gdy za granicą fantasy cieszyło się już dużą popularnością, w naszym kraju praktycznie nie istniało aż do lat 80. XX wieku. Polskie utwory science-fiction zostały rozpropagowane między innymi dzięki sukcesowi Stanisława Lema, pisarza literatury science-fiction, w latach 50. XX wieku. Drugim istotnym twórcą okazał się Janusz A. Zajdel, uznawany za ojca polskiej fantastyki socjologicznej.
+					<br />
+					W 1982 roku powstał miesięcznik <i>Fantastyka</i>, którego celem było propagowanie literatury z tego gatunku. Czasopismo istnieje do dziś, od 1990 roku pod zmienioną nazwą <i>Nowa Fantastyka</i>. To na jego łamach pojawiło się jedno z dwóch pierwszych polskich opowiadań fantasy pod tytułem <i>Mag</i>, autorstwa Jacka Piekary. W 1986 roku na łamach magazynu ukazało się również opowiadanie <i>Wiedźmin</i> Andrzeja Sapkowskiego.
+				</p>
+				<br />
+				<p>Znani polscy pisarze oraz przykłady ich twórczości:</p>
+				<br />
+				<table>
+					<tr>
+						<th class="heading">autor</th>
+						<th class="heading">gatunek</th>
+						<th class="heading">twórczość</th>
+					</tr>
+					<tr>
+						<th>Stanisław Lem</th>
+						<th>fantastyka naukowa</th>
+						<th><i>Solaris</i></th>
+					</tr>
+					<tr>
+						<th>Janusz A. Zajdel</th>
+						<th>fantastyka naukowa</th>
+						<th><i>Paradyzja</i></th>
+					</tr>
+					<tr>
+						<th>Marcin Przybyłek</th>
+						<th>fantastyka naukowa</th>
+						<th><i>Gamedec</i></th>
+					</tr>
+					<tr>
+						<th>Jacek Dukaj</th>
+						<th>fantastyka naukowa</th>
+						<th><i>Lód</i></th>
+					</tr>
+					<tr>
+						<th>Andrzej Sapkowski</th>
+						<th>fantasy</th>
+						<th><i>Wiedźmin</i></th>
+					</tr>
+					<tr>
+						<th>Jarosław Grzędowicz</th>
+						<th>fantasy</th>
+						<th><i>Pan Lodowego Ogrodu</i></th>
+					</tr>
+					<tr>
+						<th>Andrzej Pilipiuk</th>
+						<th>fantasy</th>
+						<th><i>Homo Bimbrownikus</i></th>
+					</tr>
+				</table>
+			</section>
+			<section class="source">Źródło: <a href="https://pl.wikipedia.org/wiki/Fantastyka" target="_blank">Wikipedia</a></section>
+		</div>
+	</main>
+
+	<footer class="container">
+		<div id="contact-info">
+			Kontakt: <a href="mailto:email@poczta.pl">email@poczta.pl</a>
+		</div>
+		<div id="number-of-visits"></div>
+		<div id="copyright">Copyright &copy; 2018 Wszelkie prawa zastrzeżone.</div>
+	</footer>
+</body>
+</html>
